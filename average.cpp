@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 double averageDouble(double* numbers, int len) {
@@ -9,7 +10,7 @@ double averageDouble(double* numbers, int len) {
     return sum / len;
 }
 
-int main (int argc, char** argv) {
+int main (int argc, char* argv[]) {
     int len = argc - 1;
     if (len < 1) {
         cout << "Please input numbers to find average.";
